@@ -6,6 +6,7 @@ import os
 
 # Get directory 
 script_dir = os.path.dirname(os.path.abspath(__file__))
+
 # Use pickle to load in trained model 
 model_path = os.path.join(script_dir, 'random_forest_model.pkl')
 with open(model_path, 'rb') as file:
