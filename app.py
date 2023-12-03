@@ -8,7 +8,7 @@ import os
 script_dir = os.path.dirname(os.path.abspath(__file__))
 
 # Use pickle to load in trained model 
-model_path = os.path.join(script_dir, 'random_forest_model.pkl')
+model_path = os.path.join(script_dir, 'linear_model.pkl')
 with open(model_path, 'rb') as file:
     model = pickle.load(file)
 
@@ -25,9 +25,10 @@ def main():
         bedrooms = float(flask.request.form['bedrooms'])
         bathrooms = float(flask.request.form['bathrooms'])
         sqft_living = float(flask.request.form['sqft_living'])
+        yr_built = float(flask.request.form['yr_built'])
 
-        input_variables = pd.DataFrame([[bedrooms,bathrooms, sqft_living]],
-                                       columns=['bedrooms', 'bathrooms', 'sqft_living'],
+        input_variables = pd.DataFrame([[bedrooms,bathrooms, sqft_living, yr_built]],
+                                       columns=['bedrooms', 'bathrooms', 'sqft_living', 'yr_built'],
                                        dtype=float,
                                        index=['input'])
         
@@ -36,7 +37,8 @@ def main():
         return flask.render_template('index.html',
                                      original_input = {'Bedroom(s)': bedrooms,
                                                        'Bathroom(s)': bathrooms,
-                                                        'SQFT Living': sqft_living},
+                                                        'SQFT Living': sqft_living,
+                                                        'Year Built': yr_built},
                                                         result=prediction
                                                         )
 if __name__ == '__main__':
