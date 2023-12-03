@@ -1,0 +1,46 @@
+h1{
+    color: rgb(145, 94, 189);
+    margin: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+h2{
+    color:rgb(145, 94, 189);
+    margin:auto;
+    text-align: center;    
+}
+
+.col-md-6 p{
+    font-size: 12px;
+    text-align: center;
+}
+
+p{
+    font-size: 12px;
+    text-align: center;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+}
+
+header {
+    background-color: whitesmoke;
+    padding: 20px;
+    text-align: center;
+}
+
+form {
+    background-color: whitesmoke;
+    margin: auto;
+    width: 35%;
+    
+}
+
+.result{
+    background-color: whitesmoke;
+    margin: auto;
+    border: 3px solid whitesmoke;
+}

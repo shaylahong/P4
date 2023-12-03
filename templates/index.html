@@ -2,22 +2,20 @@
 <html>
 
 <head>
-    <title>House Price Prediction</title>
-    <style>
-        form {
-            margin: auto;
-            width: 35%;
-        }
-
-        .result {
-            margin: auto;
-            width: 35%;
-            border: 1px solid #ccc;
-        }
-    </style>
+    <title>House Price in Washington, USA</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="static/style.css" rel="stylesheet" type="text/css" media="screen, projection"/>
 </head>
 
 <body>
+
+    <header id="head1">
+        <div id="titlepage">
+            <h1>House Price in Washington, USA</h1>
+        </div>
+    </header>
+    <br>
     <form action="{{ url_for('main') }}" method="POST">
         <fieldset>
             <legend>Input values:</legend>
@@ -46,6 +44,25 @@
         <p style="font-size:50px">${{ result|round }}</p>
         {% endif %}
     </div>
+
+    <br />
+    <div>
+
+        <h2 id="auth"> Authours </h2>
+        <div class = "row">
+            <div class="col-md-6">
+                <p>Shayla Hong</p>
+            </div>
+            <div class="col-md-6">
+                <p> Amey Kolangade </p>
+              </div>
+            </div>
+            <p> Kelvin Fu </p>
+    </div>
+    <br>
+    <div>
+        <a href="https://github.com/shaylahong/P4" id="link">View Project on Github</a>
+        </div>
 </body>
 
 </html>
