@@ -9,13 +9,14 @@ Aims:
 
 The dataset used for this was retrieved from Kaggle via https://www.kaggle.com/datasets/shree1992/housedata. 
 we cleaned the data set to get the columns for price, bedroom, bathroom sqft living sqft built
+
 ![image](https://github.com/shaylahong/P4/assets/134757827/87fcb9ea-c0b2-474c-9214-a4050e4ce564)
 we then tested the data using the machine learning models 
-1 Linear regression 
-2 Random forest
-3 Desision tree 
+1. Linear Regression 
+2. Decision Tree 
+3. Random Forest
 
-we found out that the linear regression model gave the most accurate result
+We found that the linear regression model returned a higher R-squared value in comparison to the decision tree and random forest model. This indicates that the linear regression model is more likely to yield a higher accuracy in predicting house prices. 
 
 Linear Regression 
 ![image](https://github.com/shaylahong/P4/assets/134757827/e0e94142-774a-4466-b338-cebf129c62c8)
@@ -26,12 +27,9 @@ Random Forest
 Desision tree
 ![image](https://github.com/shaylahong/P4/assets/134757827/f86c7e22-2337-4610-be78-4ffb31388c05)
 
-so we desided do have linear regression as the chosen model for machine learning.
+As a result, we chose to utilise the trained linear regression model to predict house prices. 
 
-we decided to have a webpage that can predecit the hosue pricing by the usee chosing the year the house was built no. of bedrooms, no. of bathroomsqft living & sqft built.
+The webpage is designed to predict house prices when the user inputs the number of bedrooms, number of bathrooms, square footage of living area, and the year it was built. 
 
-to build the code we used resoursed available in slack, chat GPT and by trial and error and learning and modifing the code to get thte desired output.
+We sourced assistance from a variety of resources such as Stack Overflow, as well as trial and error to determine which parts of the code required modification in order to attain the desired output. 
 
-## **Back End** 
-
-## **Visualisations** 
